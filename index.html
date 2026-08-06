@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENDGAME · Coming Soon</title>
+    <meta name="description" content="ENDGAME - Play. Trade. Endgame. Il tuo e-shop di giochi di carte di fiducia. Presto disponibile." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫰</text></svg>" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== CANVAS SFONDO PARTICELLE ====== -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- ====== MENU LATERALE ====== -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="side-menu" id="sideMenu" role="navigation" aria-label="Menu principale">
+        <button class="menu-close" id="menuClose" aria-label="Chiudi menu">✕</button>
+        <ul class="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="chisiamo.html">Chi siamo</a></li>
+            <!-- ======  <li><a href="#">Giochi</a></li> ====== -->
+            <!-- ======  <li><a href="#">Contatti</a></li> ====== -->
+        </ul>
+        <div class="menu-social">
+            <a href="https://www.instagram.com/endgame.shop.roma/" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/profile.php?id=61592089499386" aria-label="Facebook">FB</a>
+            <!-- ======  <a href="#" aria-label="YouTube">YT</a> ====== -->
+        </div>
+    </nav>
+
+    <!-- ====== CONTENUTO PRINCIPALE ====== -->
+    <main>
+        <!-- Hamburger trigger -->
+        <button class="menu-trigger" id="menuTrigger" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1>ENDGAME</h1>
+                <p class="tagline">Play. Trade. Endgame. Your favourite TCG e-shop.</br>
+		Coming soon.</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Giorni</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Ore</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minuti</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Secondi</span>
+                    </div>
+                </div>
+                <p class="sub-text">Stiamo preparando qualcosa di epico.<br />Torna presto!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-ai-notice">
+                Alcuni contenuti di questo sito potrebbero essere stati generati con l'ausilio di intelligenza artificiale,
+                in conformità con il Regolamento (UE) 2024/1689 (AI Act).
+            </p>
+            <p class="footer-copy">&copy; 2026 ENDGAME. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- ====== COOKIE BANNER ====== -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Informativa sui cookie">
+        <div class="cookie-banner-content">
+            <p>
+                Utilizziamo cookie tecnici e, previo tuo consenso, cookie di profilazione per offrirti un'esperienza migliore.
+                Puoi scegliere quali autorizzare.
+            </p>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-accept" id="cookieAccept">Accetta tutti</button>
+                <button class="cookie-btn cookie-reject" id="cookieReject">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
