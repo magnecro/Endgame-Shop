@@ -45,7 +45,7 @@ const secondsEl = document.getElementById('seconds');
 
 if (daysEl && hoursEl && minutesEl && secondsEl) {
     // Imposta la data di lancio (es. 1 gennaio 2027)
-    const launchDate = new Date('2026-09-01T00:00:00').getTime();
+    const launchDate = new Date('2026-10-01T00:00:00').getTime();
 
     function updateCountdown() {
         const now = Date.now();
